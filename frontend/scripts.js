@@ -80,7 +80,7 @@ const handleSubmit = (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("ws://localhost:9090")
+    websocket = new WebSocket("wss://bate-papo-4r9m.onrender.com")
     websocket.onmessage = processMessage
 }
 
